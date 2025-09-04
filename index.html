@@ -449,8 +449,13 @@
   // 페이지 로드 후 2초 뒤 팝업 자동 실행
   window.addEventListener("load", function() {
     setTimeout(openPopup, 2000);
+
+    // 닫기 버튼 클릭 이벤트 연결
+    const closeBtn = document.getElementById("closePopup");
+    closeBtn.addEventListener("click", closePopup);
   });
 </script>
+
   
   <!-- 푸터 -->
   <footer class="bg-black text-white text-center py-6 mt-12">
