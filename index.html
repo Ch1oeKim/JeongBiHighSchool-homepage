@@ -443,7 +443,22 @@
     </ul>
   </div>
 </div>
+<script>
+  // 팝업 열기
+  function openPopup() {
+    document.getElementById("popup").classList.remove("hidden");
+  }
 
+  // 팝업 닫기
+  function closePopup() {
+    document.getElementById("popup").classList.add("hidden");
+  }
+
+  // 페이지 로드 후 2초 뒤 팝업 자동 실행
+  window.addEventListener("load", function() {
+    setTimeout(openPopup, 2000);
+  });
+</script>
   
   <!-- 푸터 -->
   <footer class="bg-black text-white text-center py-6 mt-12">
